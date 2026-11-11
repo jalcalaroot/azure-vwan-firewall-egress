@@ -737,7 +737,7 @@ resource "azurerm_route_table" "containerapps" {
 module "vnet" {
   #checkov:skip=CKV_TF_1:Pinned by semver from the Terraform Registry (not a movable git tag) - official Azure Verified Module published by Microsoft; versions are immutable once published.
   source  = "Azure/avm-res-network-virtualnetwork/azurerm"
-  version = "0.22.3"
+  version = "0.23.0"
 
   name          = var.vnet_name
   location      = var.location

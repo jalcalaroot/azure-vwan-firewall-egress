@@ -20,7 +20,7 @@ module "storage_flowlogs" {
   #checkov:skip=CKV2_AZURE_41:Direct consequence of the previous skip - this check requires Shared Key access to be disabled.
   #checkov:skip=CKV2_AZURE_1:A customer-managed key would add Key Vault operation costs for operational log data.
   source  = "Azure/avm-res-storage-storageaccount/azurerm"
-  version = "0.10.0"
+  version = "0.11.0"
 
   name      = var.flow_logs_storage_account_name
   location  = var.location
